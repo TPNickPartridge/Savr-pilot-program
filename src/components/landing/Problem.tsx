@@ -40,19 +40,19 @@ const Problem = () => {
             <span className="text-primary">it's the empty ones.</span>
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-6 mb-12">
+          <div className="grid md:grid-cols-2 gap-5 mb-12">
             {problems.map((problem, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.1 * index }}
-                className="flex items-start gap-4 p-6 rounded-xl bg-surface-dark/50 border border-border/10"
+                className="flex items-start gap-4 p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:bg-white/10 hover:border-primary/30 hover:shadow-lg group"
               >
-                <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center">
+                <div className="flex-shrink-0 w-11 h-11 rounded-xl bg-primary/20 flex items-center justify-center transition-colors duration-300 group-hover:bg-primary/30">
                   <problem.icon className="w-5 h-5 text-primary" />
                 </div>
-                <p className="text-surface-dark-foreground/90 text-lg">
+                <p className="text-surface-dark-foreground/90 text-lg font-medium">
                   {problem.text}
                 </p>
               </motion.div>
@@ -63,7 +63,7 @@ const Problem = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.5 }}
-            className="text-center text-xl text-surface-dark-foreground/70 italic"
+            className="text-center text-xl text-surface-dark-foreground/70 font-light"
           >
             Empty tables aren't a demand problem — they're a timing problem.
           </motion.p>

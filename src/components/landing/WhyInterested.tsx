@@ -28,29 +28,34 @@ const WhyInterested = () => {
             <h2 className="font-display text-3xl md:text-5xl font-bold mb-4 text-foreground">
               Why Restaurants Are Interested
             </h2>
-            <p className="text-xl text-muted-foreground">
+            <p className="text-xl text-muted-foreground font-light">
               Built for operators, not coupon hunters.
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-background to-secondary/30 rounded-2xl p-8 md:p-12 border border-border shadow-lg">
+          <motion.div 
+            className="card-elevated p-8 md:p-12"
+            initial={{ opacity: 0, y: 20 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
             <ul className="space-y-5">
               {benefits.map((benefit, index) => (
                 <motion.li
                   key={index}
                   initial={{ opacity: 0, x: -20 }}
                   animate={isInView ? { opacity: 1, x: 0 } : {}}
-                  transition={{ duration: 0.4, delay: 0.1 * index }}
-                  className="flex items-start gap-4"
+                  transition={{ duration: 0.4, delay: 0.1 * index + 0.3 }}
+                  className="flex items-start gap-4 group"
                 >
-                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-primary flex items-center justify-center mt-0.5">
+                  <div className="flex-shrink-0 w-7 h-7 rounded-lg bg-primary flex items-center justify-center mt-0.5 transition-transform duration-300 group-hover:scale-110">
                     <Check className="w-4 h-4 text-primary-foreground" />
                   </div>
-                  <span className="text-lg text-foreground/90">{benefit}</span>
+                  <span className="text-lg text-foreground/90 font-medium">{benefit}</span>
                 </motion.li>
               ))}
             </ul>
-          </div>
+          </motion.div>
         </motion.div>
       </div>
     </section>
