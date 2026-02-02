@@ -24,7 +24,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-block mb-6 px-4 py-2 bg-white/10 backdrop-blur-sm text-white/90 rounded-full text-sm font-medium border border-white/20">
+            <span className="inline-block mb-6 px-5 py-2.5 bg-white/10 backdrop-blur-sm text-white/90 rounded-full text-sm font-medium border border-white/20 shadow-lg">
               Now piloting in Toronto
             </span>
           </motion.div>
@@ -33,7 +33,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight drop-shadow-lg"
+            className="font-display text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-[1.1] drop-shadow-lg"
           >
             Empty Tables.
             <br />
@@ -44,7 +44,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-xl md:text-2xl text-white/90 mb-4 max-w-2xl mx-auto leading-relaxed drop-shadow-md"
+            className="text-xl md:text-2xl text-white/90 mb-4 max-w-2xl mx-auto leading-relaxed drop-shadow-md font-light"
           >
             Turn slow dining hours into guaranteed revenue — without discounts, delivery apps, or brand dilution.
           </motion.p>
@@ -53,7 +53,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-base text-white/70 mb-10 max-w-xl mx-auto"
+            className="text-base text-white/70 mb-10 max-w-xl mx-auto font-light"
           >
             TastePass is piloting a new way for Toronto restaurants to monetize off-peak tables with pre-paid guests.
           </motion.p>
@@ -68,15 +68,15 @@ const Hero = () => {
               href="https://form.typeform.com/to/zHeavyYz"
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl text-lg font-medium hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl glow-effect"
+              className="group inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl text-lg font-semibold hover:bg-primary-glow transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-[1.02] glow-effect"
             >
               Apply for the Taste Pass Pilot
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
             </a>
             
             <a
               href="#how-it-works"
-              className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-colors text-base bg-white/10 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20 hover:bg-white/20"
+              className="inline-flex items-center gap-2 text-white/80 hover:text-white transition-all duration-300 text-base font-medium bg-white/10 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/20 hover:bg-white/20 hover:border-white/30"
             >
               Learn how the pilot works
               <ChevronDown className="w-4 h-4" />

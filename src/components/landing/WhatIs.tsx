@@ -46,9 +46,9 @@ const WhatIs = () => {
         >
           <div className="text-center mb-16">
             <h2 className="font-display text-3xl md:text-5xl font-bold mb-6 text-foreground">
-              What Is <span className="text-gradient">Taste Pass</span>?
+              What Is <span className="text-primary">Taste Pass</span>?
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-light">
               Taste Pass helps restaurants fill empty tables with guaranteed revenue.
             </p>
           </div>
@@ -57,27 +57,28 @@ const WhatIs = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="bg-secondary/50 rounded-2xl p-8 md:p-10 mb-16 border border-border"
+            className="card-elevated p-8 md:p-10 mb-16"
           >
-            <p className="text-lg md:text-xl text-foreground/90 leading-relaxed">
+            <p className="text-lg md:text-xl text-foreground/90 leading-relaxed font-light">
               Taste Pass allows restaurants to offer limited off-peak availability to diners who pre-pay for a curated dining experience. Restaurants control the timing, volume, and menu — Taste Pass simply brings demand to seats that would otherwise go unused.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-5">
             {principles.map((principle, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.1 * index + 0.3 }}
-                className="group text-center p-6 rounded-xl bg-background border border-border hover:border-primary/30 hover:shadow-lg transition-all duration-300"
+                className="group text-center p-6 rounded-2xl bg-card border border-border transition-all duration-300 hover:border-primary/30 hover:shadow-lg hover:-translate-y-1"
+                style={{ boxShadow: 'var(--shadow-card)' }}
               >
-                <div className="w-14 h-14 rounded-xl bg-accent flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/10 transition-colors">
+                <div className="w-14 h-14 rounded-2xl bg-accent flex items-center justify-center mx-auto mb-4 transition-all duration-300 group-hover:bg-primary/10 group-hover:scale-110">
                   <principle.icon className="w-7 h-7 text-primary" />
                 </div>
                 <h3 className="font-semibold text-foreground mb-2">{principle.title}</h3>
-                <p className="text-sm text-muted-foreground">{principle.description}</p>
+                <p className="text-sm text-muted-foreground font-light">{principle.description}</p>
               </motion.div>
             ))}
           </div>

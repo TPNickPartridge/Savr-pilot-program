@@ -4,28 +4,28 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
+            <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center shadow-md">
               <span className="text-primary-foreground font-bold text-sm">TP</span>
             </div>
-            <span className="font-display text-xl font-semibold text-foreground">
+            <span className="font-display text-xl font-semibold text-foreground tracking-tight">
               Taste Pass
             </span>
           </div>
 
-          <p className="text-muted-foreground text-sm text-center">
+          <p className="text-muted-foreground text-sm text-center font-light">
             Turning empty tables into real revenue.
           </p>
 
           <a
             href="mailto:hello@tastepass.com"
-            className="text-muted-foreground hover:text-primary transition-colors text-sm"
+            className="text-muted-foreground hover:text-primary transition-colors duration-300 text-sm font-medium"
           >
             hello@tastepass.com
           </a>
         </div>
 
         <div className="mt-8 pt-8 border-t border-border text-center">
-          <p className="text-sm text-muted-foreground/60">
+          <p className="text-sm text-muted-foreground/60 font-light">
             © {new Date().getFullYear()} Taste Pass. All rights reserved.
           </p>
         </div>

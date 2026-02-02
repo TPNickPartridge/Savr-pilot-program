@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 /* Taste Pass Design System */
 
@@ -56,13 +56,16 @@
     --gradient-dark: linear-gradient(180deg, hsl(220, 25%, 12%) 0%, hsl(220, 25%, 8%) 100%);
 
     /* Shadows */
-    --shadow-sm: 0 1px 2px 0 hsl(220 20% 14% / 0.05);
-    --shadow-md: 0 4px 6px -1px hsl(220 20% 14% / 0.1), 0 2px 4px -2px hsl(220 20% 14% / 0.1);
-    --shadow-lg: 0 10px 15px -3px hsl(220 20% 14% / 0.1), 0 4px 6px -4px hsl(220 20% 14% / 0.1);
-    --shadow-glow: 0 0 40px hsl(185, 77%, 44%, 0.25);
+    --shadow-sm: 0 1px 3px 0 hsl(220 20% 14% / 0.04), 0 1px 2px -1px hsl(220 20% 14% / 0.04);
+    --shadow-md: 0 4px 6px -1px hsl(220 20% 14% / 0.08), 0 2px 4px -2px hsl(220 20% 14% / 0.06);
+    --shadow-lg: 0 10px 25px -5px hsl(220 20% 14% / 0.1), 0 8px 10px -6px hsl(220 20% 14% / 0.08);
+    --shadow-xl: 0 20px 40px -10px hsl(220 20% 14% / 0.15), 0 12px 20px -8px hsl(220 20% 14% / 0.1);
+    --shadow-glow: 0 0 40px hsl(185, 77%, 44%, 0.2);
+    --shadow-card: 0 2px 8px -2px hsl(220 20% 14% / 0.08), 0 4px 16px -4px hsl(220 20% 14% / 0.06);
+    --shadow-card-hover: 0 8px 24px -6px hsl(220 20% 14% / 0.12), 0 12px 32px -8px hsl(220 20% 14% / 0.1);
 
     /* Typography */
-    --font-display: 'Playfair Display', Georgia, serif;
+    --font-display: 'Space Grotesk', system-ui, sans-serif;
     --font-body: 'Inter', system-ui, sans-serif;
 
     /* Sidebar (keeping defaults) */
@@ -129,16 +132,32 @@
   }
 
   body {
-    @apply bg-background text-foreground font-body antialiased;
+    @apply bg-background text-foreground antialiased;
     font-family: var(--font-body);
   }
 
-  h1, h2, h3 {
+  h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
+    @apply tracking-tight;
   }
 }
 
 @layer components {
+  .card-elevated {
+    @apply bg-card rounded-xl border border-border;
+    box-shadow: var(--shadow-card);
+    transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+  }
+
+  .card-elevated:hover {
+    box-shadow: var(--shadow-card-hover);
+    @apply border-primary/20;
+    transform: translateY(-2px);
+  }
+
+  .btn-transition {
+    @apply transition-all duration-300 ease-out;
+  }
   .section-dark {
     @apply bg-surface-dark text-surface-dark-foreground;
   }

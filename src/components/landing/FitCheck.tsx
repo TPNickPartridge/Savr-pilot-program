@@ -29,17 +29,17 @@ const FitCheck = () => {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-4 mb-8">
+          <div className="grid md:grid-cols-2 gap-5 mb-8">
             {criteria.map((item, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.4, delay: 0.1 * index }}
-                className="flex items-start gap-3 p-5 rounded-xl bg-surface-dark/50 border border-border/10"
+                className="flex items-start gap-4 p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:bg-white/10 hover:border-primary/30 group"
               >
-                <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
-                <span className="text-surface-dark-foreground/90">{item}</span>
+                <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-0.5 transition-transform duration-300 group-hover:scale-110" />
+                <span className="text-surface-dark-foreground/90 font-medium">{item}</span>
               </motion.div>
             ))}
           </div>
@@ -48,7 +48,7 @@ const FitCheck = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.4, delay: 0.5 }}
-            className="text-center text-surface-dark-foreground/70"
+            className="text-center text-surface-dark-foreground/70 font-light"
           >
             Fine-dining, casual, and neighborhood restaurants are all welcome.
           </motion.p>
