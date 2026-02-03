@@ -26,7 +26,7 @@ const CTA = () => {
           </h2>
           
           <p className="text-xl text-surface-dark-foreground/80 mb-10 max-w-xl mx-auto font-light">
-            We're inviting a small group of Toronto restaurants to help shape the first Taste Pass pilot.
+            We're inviting a small group of Toronto restaurants to help shape the first TastePass pilot.
           </p>
 
           <motion.div
@@ -40,7 +40,7 @@ const CTA = () => {
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-3 bg-primary text-primary-foreground px-10 py-5 rounded-2xl text-xl font-semibold hover:bg-primary-glow transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-[1.02] glow-effect"
             >
-              Apply for the Taste Pass Pilot
+              Apply for the TastePass Pilot
               <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" />
             </a>
           </motion.div>

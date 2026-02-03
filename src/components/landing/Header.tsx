@@ -14,7 +14,7 @@ const Header = () => {
             <span className="text-primary-foreground font-bold text-sm">TP</span>
           </div>
           <span className="font-display text-xl font-semibold text-foreground tracking-tight">
-            Taste Pass
+            TastePass
           </span>
         </a>
         
