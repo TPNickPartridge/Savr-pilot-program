@@ -8,7 +8,7 @@ const Footer = () => {
               <span className="text-primary-foreground font-bold text-sm">TP</span>
             </div>
             <span className="font-display text-xl font-semibold text-foreground tracking-tight">
-              TastePass
+              TastePath
             </span>
           </div>
 
@@ -17,16 +17,16 @@ const Footer = () => {
           </p>
 
           <a
-            href="mailto:hello@tastepass.com"
+            href="mailto:hello@tastepath.com"
             className="text-muted-foreground hover:text-primary transition-colors duration-300 text-sm font-medium"
           >
-            hello@tastepass.com
+            hello@tastepath.com
           </a>
         </div>
 
         <div className="mt-8 pt-8 border-t border-border text-center">
           <p className="text-sm text-muted-foreground/60 font-light">
-            © {new Date().getFullYear()} TastePass. All rights reserved.
+            © {new Date().getFullYear()} TastePath. All rights reserved.
           </p>
         </div>
       </div>
