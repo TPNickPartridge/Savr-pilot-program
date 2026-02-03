@@ -70,7 +70,7 @@ const Hero = () => {
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl text-lg font-semibold hover:bg-primary-glow transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-[1.02] glow-effect"
             >
-              Apply for the Taste Pass Pilot
+              Apply for the TastePass Pilot
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
             </a>
             

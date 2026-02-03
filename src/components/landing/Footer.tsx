@@ -8,7 +8,7 @@ const Footer = () => {
               <span className="text-primary-foreground font-bold text-sm">TP</span>
             </div>
             <span className="font-display text-xl font-semibold text-foreground tracking-tight">
-              Taste Pass
+              TastePass
             </span>
           </div>
 
@@ -26,7 +26,7 @@ const Footer = () => {
 
         <div className="mt-8 pt-8 border-t border-border text-center">
           <p className="text-sm text-muted-foreground/60 font-light">
-            © {new Date().getFullYear()} Taste Pass. All rights reserved.
+            © {new Date().getFullYear()} TastePass. All rights reserved.
           </p>
         </div>
       </div>

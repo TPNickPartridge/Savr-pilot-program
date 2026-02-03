@@ -46,10 +46,10 @@ const WhatIs = () => {
         >
           <div className="text-center mb-16">
             <h2 className="font-display text-3xl md:text-5xl font-bold mb-6 text-foreground">
-              What Is <span className="text-primary">Taste Pass</span>?
+              What Is <span className="text-primary">TastePass</span>?
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-light">
-              Taste Pass helps restaurants fill empty tables with guaranteed revenue.
+              TastePass helps restaurants fill empty tables with guaranteed revenue.
             </p>
           </div>
 
@@ -60,7 +60,7 @@ const WhatIs = () => {
             className="card-elevated p-8 md:p-10 mb-16"
           >
             <p className="text-lg md:text-xl text-foreground/90 leading-relaxed font-light">
-              Taste Pass allows restaurants to offer limited off-peak availability to diners who pre-pay for a curated dining experience. Restaurants control the timing, volume, and menu — Taste Pass simply brings demand to seats that would otherwise go unused.
+              TastePass allows restaurants to offer limited off-peak availability to diners who pre-pay for a curated dining experience. Restaurants control the timing, volume, and menu — TastePass simply brings demand to seats that would otherwise go unused.
             </p>
           </motion.div>
 
