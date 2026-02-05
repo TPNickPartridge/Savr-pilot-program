@@ -11,10 +11,10 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2.5">
           <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center shadow-md">
-            <span className="text-primary-foreground font-bold text-sm">TP</span>
+            <span className="text-primary-foreground font-bold text-sm">S</span>
           </div>
           <span className="font-display text-xl font-semibold text-foreground tracking-tight">
-            TastePath
+            SAVR
           </span>
         </a>
         
