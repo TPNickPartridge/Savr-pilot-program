@@ -55,7 +55,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-base text-white/70 mb-10 max-w-xl mx-auto font-light"
           >
-            TastePath is piloting a new way for Toronto restaurants to monetize off-peak tables with pre-paid guests.
+            SAVR is piloting a new way for Toronto restaurants to monetize off-peak tables with pre-paid guests.
           </motion.p>
 
           <motion.div
@@ -70,7 +70,7 @@ const Hero = () => {
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl text-lg font-semibold hover:bg-primary-glow transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-[1.02] glow-effect"
             >
-              Apply for the TastePath Pilot
+              Apply for the SAVR Pilot
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300" />
             </a>
             

@@ -25,7 +25,7 @@ const FitCheck = () => {
         >
           <div className="text-center mb-12">
             <h2 className="font-display text-3xl md:text-5xl font-bold mb-4">
-              Is TastePath a Good Fit for Your Restaurant?
+              Is SAVR a Good Fit for Your Restaurant?
             </h2>
           </div>
 

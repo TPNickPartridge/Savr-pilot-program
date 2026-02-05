@@ -5,10 +5,10 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
             <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center shadow-md">
-              <span className="text-primary-foreground font-bold text-sm">TP</span>
+              <span className="text-primary-foreground font-bold text-sm">S</span>
             </div>
             <span className="font-display text-xl font-semibold text-foreground tracking-tight">
-              TastePath
+              SAVR
             </span>
           </div>
 
@@ -17,16 +17,16 @@ const Footer = () => {
           </p>
 
           <a
-            href="mailto:hello@tastepath.com"
+            href="mailto:hello@savr.com"
             className="text-muted-foreground hover:text-primary transition-colors duration-300 text-sm font-medium"
           >
-            hello@tastepath.com
+            hello@savr.com
           </a>
         </div>
 
         <div className="mt-8 pt-8 border-t border-border text-center">
           <p className="text-sm text-muted-foreground/60 font-light">
-            © {new Date().getFullYear()} TastePath. All rights reserved.
+            © {new Date().getFullYear()} SAVR. All rights reserved.
           </p>
         </div>
       </div>
