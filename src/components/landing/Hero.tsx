@@ -65,7 +65,7 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
             <a
-              href="https://form.typeform.com/to/zHeavyYz"
+              href="https://form.typeform.com/to/DnXB5hWJ"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl text-lg font-semibold hover:bg-primary-glow transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-[1.02] glow-effect"

@@ -35,7 +35,7 @@ const CTA = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <a
-              href="https://form.typeform.com/to/zHeavyYz"
+              href="https://form.typeform.com/to/DnXB5hWJ"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-3 bg-primary text-primary-foreground px-10 py-5 rounded-2xl text-xl font-semibold hover:bg-primary-glow transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-[1.02] glow-effect"
