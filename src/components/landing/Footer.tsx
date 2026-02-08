@@ -17,10 +17,10 @@ const Footer = () => {
           </p>
 
           <a
-            href="mailto:hello@savr.com"
+            href="mailto:savr.pilot@gmail.com"
             className="text-muted-foreground hover:text-primary transition-colors duration-300 text-sm font-medium"
           >
-            hello@savr.com
+            savr.pilot@gmail.com
           </a>
         </div>
 
