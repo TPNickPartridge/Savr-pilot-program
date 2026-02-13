@@ -5,7 +5,6 @@ import WhatIs from "@/components/landing/WhatIs";
 import HowItWorks from "@/components/landing/HowItWorks";
 import WhyInterested from "@/components/landing/WhyInterested";
 import FitCheck from "@/components/landing/FitCheck";
-import RevenueBreakdown from "@/components/landing/RevenueBreakdown";
 import PilotDetails from "@/components/landing/PilotDetails";
 import CTA from "@/components/landing/CTA";
 import Footer from "@/components/landing/Footer";
@@ -21,7 +20,6 @@ const Index = () => {
         <HowItWorks />
         <WhyInterested />
         <FitCheck />
-        <RevenueBreakdown />
         <PilotDetails />
         <CTA />
       </main>
