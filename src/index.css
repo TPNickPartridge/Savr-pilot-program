@@ -18,10 +18,10 @@
     --popover: 0 0% 100%;
     --popover-foreground: 220 20% 14%;
 
-    /* Primary: Teal #17B5C7 = HSL 185, 77%, 44% */
-    --primary: 185 77% 44%;
+    /* Primary: Cyan #00acd5 = HSL 190, 100%, 42% */
+    --primary: 190 100% 42%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 185 77% 50%;
+    --primary-glow: 190 100% 52%;
 
     /* Secondary: Warm neutral */
     --secondary: 220 14% 96%;
