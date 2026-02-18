@@ -89,7 +89,7 @@ const ProfitCalculator = () => {
                 label="Payout %"
                 value={payoutPct}
                 min={30}
-                max={70}
+                max={60}
                 step={1}
                 format={(v) => `${v}%`}
                 onChange={setPayoutPct}
@@ -153,6 +153,11 @@ const ProfitCalculator = () => {
                   <span className="font-bold text-primary">{calc.breakEvenPayout}%</span>
                   <span className="text-surface-dark-foreground/40"> (equals food cost %)</span>
                 </p>
+                <div className="rounded-lg bg-yellow-500/10 border border-yellow-500/20 px-4 py-3">
+                  <p className="text-xs text-yellow-400/80 font-medium leading-relaxed">
+                    ⚠️ <span className="font-semibold">Disclaimer:</span> These figures are illustrative examples only and do not represent actual profits or revenue. This calculator is intended as a guide to help understand the economics behind the pilot program. Actual results will vary.
+                  </p>
+                </div>
                 <p className="text-xs text-surface-dark-foreground/40 font-light">
                   Assumes no additional staffing is required during off-peak hours.
                 </p>

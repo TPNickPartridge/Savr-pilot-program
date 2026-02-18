@@ -26,7 +26,7 @@ const Header = () => {
             How It Works
           </a>
           <a href="#calculator" className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 font-medium">
-            Calculator
+            Profit Calculator
           </a>
           <a href="#fit" className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300 font-medium">
             Is It For You?
