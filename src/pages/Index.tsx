@@ -23,8 +23,8 @@ const Index = () => {
         <WhyInterested />
         <EmptyTables />
         <ProfitCalculator />
-        <PilotDetails />
         <FitCheck />
+        <PilotDetails />
         <CTA />
       </main>
       <Footer />
