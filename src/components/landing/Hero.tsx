@@ -44,7 +44,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-xl md:text-2xl text-white/90 mb-4 max-w-2xl mx-auto leading-relaxed drop-shadow-md font-light">Turn slow dining hours into reliable revenue without discounts, delivery apps, or brand dilution.
+            className="text-xl md:text-2xl text-white/90 mb-4 max-w-2xl mx-auto leading-relaxed drop-shadow-md font-light">Turn slow dining hours into reliable revenue without public discounts, delivery apps, or brand dilution.
 
 
           </motion.p>
