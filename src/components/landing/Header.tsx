@@ -12,7 +12,7 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2.5">
           <div className="w-9 h-9 rounded-xl overflow-hidden shadow-md">
-            <img src={logoImage} alt="SAVR Logo" className="w-full h-full object-cover" />
+            <img src={logoImage} alt="SAVR Logo" className="w-full h-full object-cover scale-[1.6]" />
           </div>
           <span className="font-display text-xl font-semibold text-foreground tracking-tight">
             SAVR
