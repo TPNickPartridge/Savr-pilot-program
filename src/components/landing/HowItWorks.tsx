@@ -20,7 +20,7 @@ const steps = [
   },
   {
     number: "04",
-    title: "Receive guaranteed payouts",
+    title: "Receive reliable payouts",
     description: "Get paid for guests who would not have otherwise visited",
   },
 ];
