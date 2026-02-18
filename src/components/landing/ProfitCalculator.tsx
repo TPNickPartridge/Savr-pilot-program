@@ -89,7 +89,7 @@ const ProfitCalculator = () => {
                 label="Payout %"
                 value={payoutPct}
                 min={30}
-                max={60}
+                max={50}
                 step={1}
                 format={(v) => `${v}%`}
                 onChange={setPayoutPct}
