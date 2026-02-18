@@ -37,7 +37,7 @@ const ProfitCalculator = () => {
         : "text-yellow-500";
 
   return (
-    <section id="calculator" className="py-24 md:py-32 section-dark" ref={ref}>
+    <section id="calculator" className="py-24 md:py-32 bg-secondary/30" ref={ref}>
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -51,10 +51,10 @@ const ProfitCalculator = () => {
               <Calculator className="w-4 h-4" />
               Interactive Tool
             </div>
-            <h2 className="font-display text-3xl md:text-5xl font-bold mb-4">
+            <h2 className="font-display text-3xl md:text-5xl font-bold mb-4 text-foreground">
               Empty Table Profit Calculator
             </h2>
-            <p className="text-xl text-surface-dark-foreground/70 font-light max-w-2xl mx-auto">
+            <p className="text-xl text-muted-foreground font-light max-w-2xl mx-auto">
               Adjust the sliders to see how filling off-peak seats impacts your bottom line.
             </p>
           </div>
@@ -65,7 +65,7 @@ const ProfitCalculator = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 p-8 space-y-8"
+              className="rounded-2xl bg-card border border-border p-8 space-y-8"
             >
               <SliderRow
                 label="Average Menu Price"
@@ -110,22 +110,22 @@ const ProfitCalculator = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 p-8 flex flex-col justify-between"
+              className="rounded-2xl bg-card border border-border p-8 flex flex-col justify-between"
             >
               <div className="space-y-5">
                 <ResultRow
                   icon={<DollarSign className="w-4 h-4" />}
                   label="Revenue Received"
                   value={`$${calc.revenueReceived.toFixed(2)}`}
-                  valueClass="text-surface-dark-foreground"
+                  valueClass="text-foreground"
                 />
                 <ResultRow
                   icon={<AlertTriangle className="w-4 h-4" />}
                   label="Food Cost"
                   value={`−$${calc.foodCost.toFixed(2)}`}
-                  valueClass="text-surface-dark-foreground"
+                  valueClass="text-foreground"
                 />
-                <div className="border-t border-white/10 pt-5">
+                <div className="border-t border-border pt-5">
                   <ResultRow
                     icon={<TrendingUp className="w-4 h-4" />}
                     label="Contribution per Seat"
@@ -134,31 +134,31 @@ const ProfitCalculator = () => {
                     large
                   />
                 </div>
-                <div className="rounded-xl bg-white/5 border border-white/10 p-5">
-                  <p className="text-sm text-surface-dark-foreground/60 font-medium mb-1">
+                <div className="rounded-xl bg-accent/50 border border-primary/10 p-5">
+                  <p className="text-sm text-muted-foreground font-medium mb-1">
                     Estimated Monthly Impact
                   </p>
                   <p className={`font-display text-3xl md:text-4xl font-bold ${monthlyColor}`}>
                     {calc.monthlyImpact >= 0 ? "+" : ""}${calc.monthlyImpact.toFixed(0)}
                   </p>
-                  <p className="text-xs text-surface-dark-foreground/40 mt-1">
+                  <p className="text-xs text-muted-foreground/60 mt-1">
                     {emptySeats} seats × 4 weeks
                   </p>
                 </div>
               </div>
 
               <div className="mt-6 space-y-3">
-                <p className="text-sm text-surface-dark-foreground/60 bg-white/5 rounded-lg px-4 py-2.5 border border-white/5">
+                <p className="text-sm text-muted-foreground bg-accent/30 rounded-lg px-4 py-2.5 border border-border">
                   Break-even payout ={" "}
                   <span className="font-bold text-primary">{calc.breakEvenPayout}%</span>
-                  <span className="text-surface-dark-foreground/40"> (equals food cost %)</span>
+                  <span className="text-muted-foreground/60"> (equals food cost %)</span>
                 </p>
                 <div className="rounded-lg bg-yellow-500/10 border border-yellow-500/20 px-4 py-3">
-                  <p className="text-xs text-yellow-400/80 font-medium leading-relaxed">
+                  <p className="text-xs text-yellow-600/80 font-medium leading-relaxed">
                     ⚠️ <span className="font-semibold">Disclaimer:</span> These figures are illustrative examples only and do not represent actual profits or revenue. This calculator is intended as a guide to help understand the economics behind the pilot program. Actual results will vary.
                   </p>
                 </div>
-                <p className="text-xs text-surface-dark-foreground/40 font-light">
+                <p className="text-xs text-muted-foreground/60 font-light">
                   Assumes no additional staffing is required during off-peak hours.
                 </p>
               </div>
@@ -183,7 +183,7 @@ interface SliderRowProps {
 const SliderRow = ({ label, value, min, max, step, format, onChange }: SliderRowProps) => (
   <div>
     <div className="flex items-center justify-between mb-3">
-      <span className="text-sm font-medium text-surface-dark-foreground/80">{label}</span>
+      <span className="text-sm font-medium text-foreground/80">{label}</span>
       <span className="font-display text-lg font-bold text-primary">{format(value)}</span>
     </div>
     <Slider
@@ -195,8 +195,8 @@ const SliderRow = ({ label, value, min, max, step, format, onChange }: SliderRow
       className="w-full"
     />
     <div className="flex justify-between mt-1.5">
-      <span className="text-xs text-surface-dark-foreground/30">{format(min)}</span>
-      <span className="text-xs text-surface-dark-foreground/30">{format(max)}</span>
+      <span className="text-xs text-muted-foreground/60">{format(min)}</span>
+      <span className="text-xs text-muted-foreground/60">{format(max)}</span>
     </div>
   </div>
 );
@@ -211,7 +211,7 @@ interface ResultRowProps {
 
 const ResultRow = ({ icon, label, value, valueClass, large }: ResultRowProps) => (
   <div className="flex items-center justify-between">
-    <div className="flex items-center gap-2 text-surface-dark-foreground/60">
+    <div className="flex items-center gap-2 text-muted-foreground">
       {icon}
       <span className="text-sm font-medium">{label}</span>
     </div>

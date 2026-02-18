@@ -30,7 +30,7 @@ const HowItWorks = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="how-it-works" className="py-24 md:py-32 bg-secondary/30" ref={ref}>
+    <section id="how-it-works" className="py-24 md:py-32 section-dark" ref={ref}>
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -39,10 +39,10 @@ const HowItWorks = () => {
           className="max-w-5xl mx-auto"
         >
           <div className="text-center mb-16">
-            <h2 className="font-display text-3xl md:text-5xl font-bold mb-6 text-foreground">
+            <h2 className="font-display text-3xl md:text-5xl font-bold mb-6 text-surface-dark-foreground">
               How the Pilot Works
             </h2>
-            <p className="text-xl text-muted-foreground font-light">
+            <p className="text-xl text-surface-dark-foreground/70 font-light">
               Four simple steps to start filling empty tables
             </p>
           </div>
@@ -54,7 +54,7 @@ const HowItWorks = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.15 * index }}
-                className="relative bg-card rounded-2xl p-8 border border-border transition-all duration-300 hover:border-primary/30 hover:shadow-lg hover:-translate-y-1 group"
+                className="relative bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 transition-all duration-300 hover:border-primary/30 hover:bg-white/10 hover:shadow-lg hover:-translate-y-1 group"
                 style={{ boxShadow: 'var(--shadow-card)' }}
               >
                 <span className="absolute top-6 right-6 text-6xl font-bold text-primary/10 font-display transition-colors duration-300 group-hover:text-primary/20">
@@ -64,10 +64,10 @@ const HowItWorks = () => {
                   <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center mb-4 transition-colors duration-300 group-hover:bg-primary/20">
                     <span className="text-primary font-bold font-display">{step.number}</span>
                   </div>
-                  <h3 className="font-semibold text-xl text-foreground mb-2">
+                  <h3 className="font-semibold text-xl text-surface-dark-foreground mb-2">
                     {step.title}
                   </h3>
-                  <p className="text-muted-foreground font-light">{step.description}</p>
+                  <p className="text-surface-dark-foreground/70 font-light">{step.description}</p>
                 </div>
               </motion.div>
             ))}
@@ -79,7 +79,7 @@ const HowItWorks = () => {
             transition={{ duration: 0.5, delay: 0.7 }}
             className="text-center mt-12"
           >
-            <p className="inline-block text-lg text-muted-foreground bg-accent/50 rounded-2xl px-8 py-5 border border-primary/10 font-light">
+            <p className="inline-block text-lg text-surface-dark-foreground/70 bg-white/5 rounded-2xl px-8 py-5 border border-white/10 font-light">
               This pilot is designed to complement your existing service — not disrupt peak operations.
             </p>
           </motion.div>

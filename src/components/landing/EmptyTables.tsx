@@ -8,7 +8,7 @@ const EmptyTables = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="py-24 md:py-32 bg-secondary/30" ref={ref}>
+    <section className="py-24 md:py-32 section-dark" ref={ref}>
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -18,11 +18,11 @@ const EmptyTables = () => {
         >
           {/* Header */}
           <div className="text-center mb-8">
-            <h2 className="font-display text-3xl md:text-5xl font-bold mb-4 text-foreground">
+            <h2 className="font-display text-3xl md:text-5xl font-bold mb-4 text-surface-dark-foreground">
               Why Empty Tables Are Worth{" "}
               <span className="text-primary">$0</span>
             </h2>
-            <p className="text-xl text-muted-foreground font-light max-w-2xl mx-auto">
+            <p className="text-xl text-surface-dark-foreground/70 font-light max-w-2xl mx-auto">
               Restaurants carry high fixed costs — rent, labour, utilities — regardless of how many guests walk in.
             </p>
           </div>
@@ -32,7 +32,7 @@ const EmptyTables = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.15 }}
-            className="text-center text-lg text-muted-foreground font-light mb-14 max-w-xl mx-auto"
+            className="text-center text-lg text-surface-dark-foreground/60 font-light mb-14 max-w-xl mx-auto"
           >
             During off-peak hours, an empty table doesn't just earn nothing — it costs you money. Filling it, even at a reduced rate, creates real contribution margin.
           </motion.p>
@@ -44,7 +44,7 @@ const EmptyTables = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.25 }}
-              className="rounded-2xl border border-border bg-card p-8 relative overflow-hidden"
+              className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-8 relative overflow-hidden"
               style={{ boxShadow: "var(--shadow-card)" }}
             >
               <div className="absolute top-0 left-0 w-full h-1 bg-destructive/60" />
@@ -52,26 +52,26 @@ const EmptyTables = () => {
                 <div className="w-11 h-11 rounded-xl bg-destructive/10 flex items-center justify-center">
                   <XCircle className="w-5 h-5 text-destructive" />
                 </div>
-                <h3 className="font-display text-xl font-bold text-foreground">Empty Table</h3>
+                <h3 className="font-display text-xl font-bold text-surface-dark-foreground">Empty Table</h3>
               </div>
 
               <div className="space-y-4">
-                <div className="flex items-center justify-between py-3 border-b border-border">
-                  <div className="flex items-center gap-2 text-muted-foreground">
+                <div className="flex items-center justify-between py-3 border-b border-white/10">
+                  <div className="flex items-center gap-2 text-surface-dark-foreground/60">
                     <DollarSign className="w-4 h-4" />
                     <span className="font-medium">Revenue</span>
                   </div>
-                  <span className="font-display text-2xl font-bold text-foreground">$0</span>
+                  <span className="font-display text-2xl font-bold text-surface-dark-foreground">$0</span>
                 </div>
-                <div className="flex items-center justify-between py-3 border-b border-border">
-                  <div className="flex items-center gap-2 text-muted-foreground">
+                <div className="flex items-center justify-between py-3 border-b border-white/10">
+                  <div className="flex items-center gap-2 text-surface-dark-foreground/60">
                     <UtensilsCrossed className="w-4 h-4" />
                     <span className="font-medium">Food Cost</span>
                   </div>
-                  <span className="font-display text-2xl font-bold text-foreground">$0</span>
+                  <span className="font-display text-2xl font-bold text-surface-dark-foreground">$0</span>
                 </div>
                 <div className="flex items-center justify-between py-3">
-                  <div className="flex items-center gap-2 text-muted-foreground">
+                  <div className="flex items-center gap-2 text-surface-dark-foreground/60">
                     <TrendingUp className="w-4 h-4" />
                     <span className="font-medium">Contribution</span>
                   </div>
@@ -79,7 +79,7 @@ const EmptyTables = () => {
                 </div>
               </div>
 
-              <p className="mt-6 text-sm text-muted-foreground font-light">
+              <p className="mt-6 text-sm text-surface-dark-foreground/50 font-light">
                 Fixed costs keep running. Zero guests means zero return on those costs.
               </p>
             </motion.div>
@@ -89,7 +89,7 @@ const EmptyTables = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.35 }}
-              className="rounded-2xl border border-primary/30 bg-card p-8 relative overflow-hidden"
+              className="rounded-2xl border border-primary/30 bg-white/5 backdrop-blur-sm p-8 relative overflow-hidden"
               style={{ boxShadow: "var(--shadow-card)" }}
             >
               <div className="absolute top-0 left-0 w-full h-1 bg-primary" />
@@ -97,26 +97,26 @@ const EmptyTables = () => {
                 <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center">
                   <CheckCircle2 className="w-5 h-5 text-primary" />
                 </div>
-                <h3 className="font-display text-xl font-bold text-foreground">Filled via SAVR</h3>
+                <h3 className="font-display text-xl font-bold text-surface-dark-foreground">Filled via SAVR</h3>
               </div>
 
               <div className="space-y-4">
-                <div className="flex items-center justify-between py-3 border-b border-border">
-                  <div className="flex items-center gap-2 text-muted-foreground">
+                <div className="flex items-center justify-between py-3 border-b border-white/10">
+                  <div className="flex items-center gap-2 text-surface-dark-foreground/60">
                     <DollarSign className="w-4 h-4" />
                     <span className="font-medium">Revenue</span>
                   </div>
-                  <span className="font-display text-2xl font-bold text-foreground">$50</span>
+                  <span className="font-display text-2xl font-bold text-surface-dark-foreground">$50</span>
                 </div>
-                <div className="flex items-center justify-between py-3 border-b border-border">
-                  <div className="flex items-center gap-2 text-muted-foreground">
+                <div className="flex items-center justify-between py-3 border-b border-white/10">
+                  <div className="flex items-center gap-2 text-surface-dark-foreground/60">
                     <UtensilsCrossed className="w-4 h-4" />
                     <span className="font-medium">Food Cost</span>
                   </div>
-                  <span className="font-display text-2xl font-bold text-foreground">−$15</span>
+                  <span className="font-display text-2xl font-bold text-surface-dark-foreground">−$15</span>
                 </div>
                 <div className="flex items-center justify-between py-3">
-                  <div className="flex items-center gap-2 text-muted-foreground">
+                  <div className="flex items-center gap-2 text-surface-dark-foreground/60">
                     <TrendingUp className="w-4 h-4" />
                     <span className="font-medium">Contribution</span>
                   </div>
@@ -124,7 +124,7 @@ const EmptyTables = () => {
                 </div>
               </div>
 
-              <p className="mt-6 text-sm text-muted-foreground font-light">
+              <p className="mt-6 text-sm text-surface-dark-foreground/50 font-light">
                 Even at a 50% payout, each filled table adds directly to your bottom line.
               </p>
             </motion.div>
@@ -137,7 +137,7 @@ const EmptyTables = () => {
             transition={{ duration: 0.5, delay: 0.5 }}
             className="text-center"
           >
-            <p className="inline-block text-lg text-muted-foreground bg-accent/50 rounded-2xl px-8 py-5 border border-primary/10 font-light max-w-2xl">
+            <p className="inline-block text-lg text-surface-dark-foreground/70 bg-white/5 rounded-2xl px-8 py-5 border border-white/10 font-light max-w-2xl">
               Optimizing unused capacity doesn't reduce value — it increases sustainability.
             </p>
           </motion.div>
