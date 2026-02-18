@@ -11,7 +11,7 @@ const steps = [
   {
     number: "02",
     title: "Set how many tables you'd like to fill",
-    description: "You control the volume — no surprises",
+    description: "You control the volume with no surprises",
   },
   {
     number: "03",
