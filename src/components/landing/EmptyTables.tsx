@@ -14,16 +14,16 @@ const EmptyTables = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="max-w-5xl mx-auto"
-        >
+          className="max-w-5xl mx-auto">
+
           {/* Header */}
           <div className="text-center mb-8">
             <h2 className="font-display text-3xl md:text-5xl font-bold mb-4 text-surface-dark-foreground">
               Why Empty Tables Are Worth{" "}
               <span className="text-primary">$0</span>
             </h2>
-            <p className="text-xl text-surface-dark-foreground/70 font-light max-w-2xl mx-auto">
-              Restaurants carry high fixed costs — rent, labour, utilities — regardless of how many guests walk in.
+            <p className="text-xl text-surface-dark-foreground/70 font-light max-w-2xl mx-auto">Restaurants carry high fixed costs (rent, labour, utilities). Regardless of how many guests walk in.
+
             </p>
           </div>
 
@@ -32,9 +32,9 @@ const EmptyTables = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.15 }}
-            className="text-center text-lg text-surface-dark-foreground/60 font-light mb-14 max-w-xl mx-auto"
-          >
-            During off-peak hours, an empty table doesn't just earn nothing — it costs you money. Filling it, even at a reduced rate, creates real contribution margin.
+            className="text-center text-lg text-surface-dark-foreground/60 font-light mb-14 max-w-xl mx-auto">During off-peak hours, an empty table doesn't just earn nothing, it costs you money. Filling it, even at a reduced rate, creates real contribution margin.
+
+
           </motion.p>
 
           {/* Comparison Cards */}
@@ -45,8 +45,8 @@ const EmptyTables = () => {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.25 }}
               className="rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm p-8 relative overflow-hidden"
-              style={{ boxShadow: "var(--shadow-card)" }}
-            >
+              style={{ boxShadow: "var(--shadow-card)" }}>
+
               <div className="absolute top-0 left-0 w-full h-1 bg-destructive/60" />
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-11 h-11 rounded-xl bg-destructive/10 flex items-center justify-center">
@@ -90,8 +90,8 @@ const EmptyTables = () => {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.35 }}
               className="rounded-2xl border border-primary/30 bg-white/5 backdrop-blur-sm p-8 relative overflow-hidden"
-              style={{ boxShadow: "var(--shadow-card)" }}
-            >
+              style={{ boxShadow: "var(--shadow-card)" }}>
+
               <div className="absolute top-0 left-0 w-full h-1 bg-primary" />
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center">
@@ -135,16 +135,16 @@ const EmptyTables = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.5, delay: 0.5 }}
-            className="text-center"
-          >
-            <p className="inline-block text-lg text-surface-dark-foreground/70 bg-white/5 rounded-2xl px-8 py-5 border border-white/10 font-light max-w-2xl">
-              Optimizing unused capacity doesn't reduce value — it increases sustainability.
+            className="text-center">
+
+            <p className="inline-block text-lg text-surface-dark-foreground/70 bg-white/5 rounded-2xl px-8 py-5 border border-white/10 font-light max-w-2xl">Optimizing unused capacity doesn't reduce value - it increases sustainability.
+
             </p>
           </motion.div>
         </motion.div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default EmptyTables;

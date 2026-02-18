@@ -19,8 +19,8 @@ const CTA = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
-          className="max-w-3xl mx-auto text-center"
-        >
+          className="max-w-3xl mx-auto text-center">
+
           <h2 className="font-display text-3xl md:text-5xl font-bold mb-6">
             Interested in Filling Empty Tables?
           </h2>
@@ -32,14 +32,14 @@ const CTA = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
+            transition={{ duration: 0.5, delay: 0.2 }}>
+
             <a
               href="https://form.typeform.com/to/DnXB5hWJ"
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-3 bg-primary text-primary-foreground px-10 py-5 rounded-2xl text-xl font-semibold hover:bg-primary-glow transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-[1.02] glow-effect"
-            >
+              className="group inline-flex items-center gap-3 bg-primary text-primary-foreground px-10 py-5 rounded-2xl text-xl font-semibold hover:bg-primary-glow transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-[1.02] glow-effect">
+
               Apply for the SAVR Pilot
               <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform duration-300" />
             </a>
@@ -49,14 +49,14 @@ const CTA = () => {
             initial={{ opacity: 0 }}
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="mt-6 text-sm text-surface-dark-foreground/60 font-light"
-          >
-            This is an interest and feedback form only — there is no obligation or commitment.
+            className="mt-6 text-sm text-surface-dark-foreground/60 font-light">This is an interest and feedback form only. There is no obligation or commitment.
+
+
           </motion.p>
         </motion.div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default CTA;
