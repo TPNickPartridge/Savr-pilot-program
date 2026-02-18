@@ -15,7 +15,7 @@ const FitCheck = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="fit" className="py-24 md:py-32 section-dark" ref={ref}>
+    <section id="fit" className="py-24 md:py-32 bg-background" ref={ref}>
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -24,7 +24,7 @@ const FitCheck = () => {
           className="max-w-4xl mx-auto"
         >
           <div className="text-center mb-12">
-            <h2 className="font-display text-3xl md:text-5xl font-bold mb-4">
+            <h2 className="font-display text-3xl md:text-5xl font-bold mb-4 text-foreground">
               Is SAVR a Good Fit for Your Restaurant?
             </h2>
           </div>
@@ -36,10 +36,10 @@ const FitCheck = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.4, delay: 0.1 * index }}
-                className="flex items-start gap-4 p-6 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:bg-white/10 hover:border-primary/30 group"
+                className="flex items-start gap-4 p-6 rounded-2xl bg-card border border-border transition-all duration-300 hover:border-primary/30 hover:shadow-lg group"
               >
                 <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0 mt-0.5 transition-transform duration-300 group-hover:scale-110" />
-                <span className="text-surface-dark-foreground/90 font-medium">{item}</span>
+                <span className="text-foreground/90 font-medium">{item}</span>
               </motion.div>
             ))}
           </div>
@@ -48,7 +48,7 @@ const FitCheck = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.4, delay: 0.5 }}
-            className="text-center text-surface-dark-foreground/70 font-light"
+            className="text-center text-muted-foreground font-light"
           >
             Fine-dining, casual, and neighborhood restaurants are all welcome.
           </motion.p>
