@@ -22,7 +22,7 @@ const principles = [
 {
   icon: CreditCard,
   title: "Guests pre-pay",
-  description: "Guaranteed revenue before they arrive"
+  description: "Predictable revenue before they arrive"
 },
 {
   icon: TrendingUp,
