@@ -22,7 +22,7 @@ const EmptyTables = () => {
               Why Empty Tables Are Worth{" "}
               <span className="text-primary">$0</span>
             </h2>
-            <p className="text-xl text-surface-dark-foreground/70 font-light max-w-2xl mx-auto">Restaurants carry high fixed costs (rent, labour, utilities). Regardless of how many guests walk in.
+            <p className="text-xl text-surface-dark-foreground/70 font-light max-w-2xl mx-auto">Restaurants carry high fixed costs (rent, labour, utilities), regardless of how many guests walk in.
 
             </p>
           </div>
