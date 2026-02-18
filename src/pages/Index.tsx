@@ -20,11 +20,11 @@ const Index = () => {
         <Problem />
         <WhatIs />
         <HowItWorks />
-        <FitCheck />
         <WhyInterested />
         <EmptyTables />
         <ProfitCalculator />
         <PilotDetails />
+        <FitCheck />
         <CTA />
       </main>
       <Footer />
