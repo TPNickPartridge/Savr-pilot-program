@@ -5,7 +5,7 @@ import { Check } from "lucide-react";
 
 const benefits = [
   "Monetize empty inventory without discounting your brand",
-  "Predictable, guaranteed revenue during slow hours",
+  "Predictable, reliable revenue during slow hours",
   "Attract new diners without replacing existing ones",
   "Keep full control over service quality and experience",
   "Pilot-phase feedback directly shapes the product",
