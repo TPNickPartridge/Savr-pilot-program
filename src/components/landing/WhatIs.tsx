@@ -45,7 +45,7 @@ const WhatIs = () => {
           className="max-w-5xl mx-auto">
 
           <div className="text-center mb-16">
-            <h2 className="font-display text-3xl md:text-5xl font-bold mb-6 text-foreground">What is SAVR?
+            <h2 className="font-display text-3xl md:text-5xl font-bold mb-6 text-foreground">What is SAVR?
               <span className="text-primary">SAVR</span>?
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-light">SAVR helps restaurants fill empty tables with reliable revenue.
