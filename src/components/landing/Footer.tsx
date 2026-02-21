@@ -1,11 +1,13 @@
+import logoImage from "@/assets/logo.png";
+
 const Footer = () => {
   return (
     <footer className="py-12 bg-background border-t border-border">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center shadow-md">
-              <span className="text-primary-foreground font-bold text-sm">S</span>
+            <div className="w-9 h-9 rounded-xl overflow-hidden shadow-md">
+              <img src={logoImage} alt="SAVR Logo" className="w-full h-full object-cover scale-[1.6]" />
             </div>
             <span className="font-display text-xl font-semibold text-foreground tracking-tight">
               SAVR
