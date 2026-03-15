@@ -85,15 +85,13 @@ const ProfitCalculator = () => {
                 format={(v) => `${v}%`}
                 onChange={setFoodCostPct}
               />
-              <SliderRow
-                label="Payout %"
-                value={payoutPct}
-                min={30}
-                max={50}
-                step={1}
-                format={(v) => `${v}%`}
-                onChange={setPayoutPct}
-              />
+              <div>
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-sm font-medium text-foreground/80">Payout %</span>
+                  <span className="font-display text-lg font-bold text-primary">55%</span>
+                </div>
+                <p className="text-xs text-muted-foreground/60">Fixed rate</p>
+              </div>
               <SliderRow
                 label="Empty Seats Per Week"
                 value={emptySeats}
