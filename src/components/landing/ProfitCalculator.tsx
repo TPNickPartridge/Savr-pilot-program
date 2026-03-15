@@ -10,7 +10,7 @@ const ProfitCalculator = () => {
 
   const [menuPrice, setMenuPrice] = useState(30);
   const [foodCostPct, setFoodCostPct] = useState(30);
-  const [payoutPct, setPayoutPct] = useState(50);
+  const payoutPct = 55;
   const [emptySeats, setEmptySeats] = useState(20);
 
   const calc = useMemo(() => {
